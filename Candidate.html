@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Candidate Information</title>
+</head>
+<body>
+
+<h2 align="center"><b>Candidate Information</b></h2>
+<form method="get" action="#">
+<table border="1" align="center" bgcolor="lightblue" width=700 height=100 >
+
+<tr>
+<td>Name:<sup><font color="red">*</font></sup></td>
+<td><input type='text' name="name" id="name" maxlength="15" required="required"></td>
+</tr>
+
+<tr>
+<td>Password:<sup><font color="red">*</font></sup></td>
+<td><input type='Password' name="Password" id="Password" maxlength="15" required="required"></td>
+</tr>
+
+
+<tr>
+<td>Phone Number:<sup><font color="red">*</font></sup></td>
+<td><input type='number' name="Phone Number" id="Phone Number" maxlength="10" required="required"></td>
+</tr>
+
+<tr>
+<td>Gender:<sup><font color="red">*</font></sup></td>
+<td>
+<input type="radio" name="Male" value="Male" >Male
+ <input type="radio" name="Female" value="Female" >Female
+ </td>
+ </tr>
+
+<tr>
+<td>Date:<sup><font color="red">*</font></sup></td>
+<td><input id ="date" type="date"></td>
+</tr>
+
+<tr>
+<td>Email:<sup><font color="red">*</font></sup></td>
+<td><input type='email' name="'email'" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="required"></td>
+</tr>
+
+<tr>
+<td>Highest Qualification:<sup><font color="red">*</font></sup></td>
+<td> <input list="Select Highest Qualification" name="Select Highest Qualification"><datalist id="Select Highest Qualification">
+	<option value="Select Highest Qualification">
+  <option value="B.Tech">
+  <option value="M.Tech">
+  <option value="MBA">
+  <option value="MCA">
+  <option value="MSC">
+   <option value="MA">
+  <option value="BSC">
+</datalist></td>
+</tr>
+
+<tr>
+<td>Course interested in:<sup><font color="red">*</font></sup></td>
+<td>
+<input type="checkbox" name="java" value="java" size="10">java
+ <input type="checkbox" name="HTML5" value="HTML5" size="10">HTML5
+ <input type="checkbox" name="CSS3" value="CSS3" size="10">CSS3
+ <input type="checkbox" name="Angular js" value="Angular js" size="10">Angular js
+ <input type="checkbox" name="JQuery " value="JQuery" size="10">JQuery
+ </td>
+</tr>
+
+<tr>
+<td>Comments: (Mention external certificate if any)</td>
+<td><textarea name="Comments" Rows="5" Cols="50"></textarea></td>
+</tr>
+
+<tr>
+<td>Uplolad Degree/External Certificates:<sup><font color="red">*</font></sup></td>
+<td><input type="file" name="pic" accept="image/*" placeholder="No file choosen"></td>
+
+</tr>
+
+<tr>
+<td></td>
+<td><input id="Submit Information" type="submit" name="submit" value="Submit Information" />&nbsp;&nbsp;
+    <input id="clear" type="reset" name="clear" value="clear" /></td>
+
+</tr>
+</table>
+<center><font color="red">All fields marked(*) are mandatory</font></center>
+</form>
+</body>
+</html>
